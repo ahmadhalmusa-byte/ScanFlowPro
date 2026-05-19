@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ScanFlow Pro – Privacy Policy</title>
+  <title>Privacy Policy – ScanFlow Pro: Document Scanner &amp; PDF Creator</title>
+  <meta name="description" content="Privacy Policy for ScanFlow Pro – Document Scanner & PDF Creator Android app." />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -11,243 +12,370 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: #f5f7fa;
       color: #1a1a2e;
-      line-height: 1.7;
+      line-height: 1.75;
     }
+
+    /* ── Top bar ── */
+    .topbar {
+      background: #0f3460;
+      color: rgba(255,255,255,.65);
+      font-size: .78rem;
+      text-align: center;
+      padding: 8px 20px;
+      letter-spacing: .4px;
+    }
+    .topbar strong { color: #fff; }
 
     /* ── Hero ── */
     header {
-      background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+      background: linear-gradient(150deg, #0f3460 0%, #16213e 100%);
       color: #fff;
       text-align: center;
-      padding: 60px 20px 48px;
+      padding: 56px 20px 44px;
     }
-    header .icon {
-      width: 96px;
-      height: 96px;
+    .app-logo {
+      width: 88px;
+      height: 88px;
       background: #e94560;
-      border-radius: 22px;
+      border-radius: 20px;
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 20px;
-      font-size: 48px;
+      font-size: 44px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(233,69,96,.4);
     }
-    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
-    header p  { margin-top: 8px; opacity: .75; font-size: 1rem; }
+    .app-name {
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -.5px;
+    }
+    .app-tagline {
+      margin-top: 6px;
+      font-size: .95rem;
+      opacity: .7;
+    }
+    .policy-label {
+      display: inline-block;
+      margin-top: 18px;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 30px;
+      padding: 5px 20px;
+      font-size: .82rem;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
 
     /* ── Features strip ── */
     .features {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 16px;
-      padding: 40px 20px;
+      gap: 12px;
+      padding: 32px 20px;
       background: #fff;
       border-bottom: 1px solid #e8ecf0;
     }
     .feature {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
       background: #f0f4ff;
-      border-radius: 12px;
-      padding: 12px 20px;
-      font-size: .92rem;
+      border-radius: 10px;
+      padding: 10px 16px;
+      font-size: .88rem;
       font-weight: 500;
       color: #0f3460;
     }
-    .feature span { font-size: 1.3rem; }
+    .feature span { font-size: 1.2rem; }
 
-    /* ── Content ── */
+    /* ── Main content ── */
     main {
-      max-width: 800px;
+      max-width: 760px;
       margin: 0 auto;
       padding: 48px 24px 80px;
     }
 
-    h2 {
-      font-size: 1.5rem;
-      color: #0f3460;
-      margin: 40px 0 14px;
-      padding-bottom: 8px;
-      border-bottom: 2px solid #e94560;
+    .policy-title-block {
+      margin-bottom: 36px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid #e8ecf0;
     }
-    h2:first-child { margin-top: 0; }
-
-    p  { margin-bottom: 14px; }
-    ul { margin: 10px 0 14px 20px; }
-    ul li { margin-bottom: 6px; }
-
-    .badge {
+    .policy-title-block h1 {
+      font-size: 1.75rem;
+      color: #0f3460;
+      font-weight: 700;
+    }
+    .policy-title-block .meta {
+      margin-top: 10px;
+      font-size: .88rem;
+      color: #6b7280;
+    }
+    .policy-title-block .meta span {
       display: inline-block;
+      margin-right: 18px;
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      color: #0f3460;
+      font-weight: 700;
+      margin: 36px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h2::before {
+      content: attr(data-n);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
       background: #e94560;
       color: #fff;
-      font-size: .75rem;
-      font-weight: 600;
-      padding: 2px 10px;
+      font-size: .78rem;
+      font-weight: 700;
+      border-radius: 50%;
+    }
+
+    p  { margin-bottom: 14px; color: #374151; }
+    ul { margin: 8px 0 14px 22px; }
+    ul li { margin-bottom: 7px; color: #374151; }
+
+    code {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: .88em;
+      color: #0f3460;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: #0f3460;
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 3px 10px;
       border-radius: 20px;
       margin-right: 8px;
+      letter-spacing: .3px;
       vertical-align: middle;
     }
 
     .card {
       background: #fff;
       border: 1px solid #e8ecf0;
-      border-radius: 14px;
-      padding: 20px 24px;
-      margin: 16px 0;
+      border-radius: 12px;
+      padding: 18px 22px;
+      margin: 12px 0;
     }
+    .card h3 {
+      font-size: .95rem;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .card p { margin-bottom: 0; font-size: .92rem; }
 
-    .card h3 { font-size: 1rem; color: #0f3460; margin-bottom: 8px; }
+    a { color: #e94560; word-break: break-all; }
+
+    .highlight-box {
+      background: #fffbeb;
+      border: 1px solid #fcd34d;
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: .92rem;
+      color: #374151;
+    }
 
     footer {
       text-align: center;
-      padding: 32px 20px;
+      padding: 30px 20px;
       background: #16213e;
-      color: rgba(255,255,255,.5);
-      font-size: .85rem;
+      color: rgba(255,255,255,.45);
+      font-size: .82rem;
+    }
+    footer .app-footer-name {
+      color: #fff;
+      font-weight: 600;
+      font-size: .9rem;
+      display: block;
+      margin-bottom: 6px;
     }
     footer a { color: #e94560; text-decoration: none; }
   </style>
 </head>
 <body>
 
-<!-- ═══════════════════════  HEADER  ═══════════════════════ -->
+<!-- ═══ TOP BAR ═══ -->
+<div class="topbar">
+  <strong>ScanFlow Pro: Document Scanner &amp; PDF Creator</strong>
+  &nbsp;·&nbsp; Privacy Policy
+</div>
+
+<!-- ═══ HEADER ═══ -->
 <header>
-  <div class="icon">📄</div>
-  <h1>ScanFlow Pro</h1>
-  <p>Document Scanner &amp; PDF Creator</p>
+  <div class="app-logo">📄</div>
+  <div class="app-name">ScanFlow Pro</div>
+  <div class="app-tagline">Document Scanner &amp; PDF Creator</div>
+  <div class="policy-label">Privacy Policy</div>
 </header>
 
-<!-- ═══════════════════════  FEATURES  ═══════════════════════ -->
+<!-- ═══ FEATURES ═══ -->
 <section class="features">
   <div class="feature"><span>📷</span> Camera Scanning</div>
   <div class="feature"><span>📑</span> PDF Export</div>
   <div class="feature"><span>✂️</span> Crop &amp; Rotate</div>
-  <div class="feature"><span>🌗</span> B&amp;W / Grayscale Filters</div>
+  <div class="feature"><span>🌗</span> B&amp;W / Grayscale</div>
   <div class="feature"><span>☀️</span> Brightness &amp; Contrast</div>
   <div class="feature"><span>🌐</span> Arabic &amp; English</div>
 </section>
 
-<!-- ═══════════════════════  PRIVACY POLICY  ═══════════════════════ -->
+<!-- ═══ POLICY CONTENT ═══ -->
 <main>
 
-  <h2>Privacy Policy</h2>
-  <p><strong>Effective Date:</strong> May 20, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> May 20, 2026</p>
+  <!-- Title block -->
+  <div class="policy-title-block">
+    <h1>Privacy Policy for ScanFlow Pro</h1>
+    <div class="meta">
+      <span>📅 Effective Date: May 20, 2026</span>
+      <span>🔄 Last Updated: May 20, 2026</span>
+    </div>
+  </div>
 
   <p>
-    ScanFlow Pro ("we", "our", or "the app") is a free mobile application for Android that lets
-    users scan physical documents using their device camera, apply edits, and save results
-    as JPEG images or PDF files. This Privacy Policy explains what information we collect,
-    how it is used, and your rights.
+    This Privacy Policy describes how <strong>ScanFlow Pro: Document Scanner &amp; PDF Creator</strong>
+    ("the App", "we", "our") handles information when you use our Android application.
+    By using ScanFlow Pro, you agree to the practices described in this policy.
   </p>
 
+  <div class="highlight-box">
+    <strong>Summary:</strong> ScanFlow Pro does not collect, store, or transmit any personal data
+    to external servers. All document processing happens entirely on your device.
+  </div>
+
   <!-- 1 -->
-  <h2>1. Information We Do Not Collect</h2>
-  <p>ScanFlow Pro does <strong>not</strong>:</p>
+  <h2 data-n="1">Information We Do Not Collect</h2>
+  <p>ScanFlow Pro does <strong>not</strong> collect any of the following:</p>
   <ul>
-    <li>Require account registration or login</li>
-    <li>Upload photos, scans, or documents to any server</li>
-    <li>Collect your name, email address, or any personal identifier</li>
-    <li>Track your location</li>
-    <li>Share your data with third parties (except as described in Section 3)</li>
+    <li>Personal information (name, email, phone number)</li>
+    <li>Account credentials — no login or registration required</li>
+    <li>Photos, documents, or scanned images uploaded to any server</li>
+    <li>Location data (GPS or network-based)</li>
+    <li>Device identifiers beyond what AdMob requires for ad delivery</li>
   </ul>
-  <p>All scanned documents are stored <strong>locally on your device only</strong>
-     (in <code>Pictures/ScanFlowPro</code> or <code>Download/ScanFlowPro</code>).</p>
+  <p>
+    All scanned files are saved <strong>locally on your device only</strong>,
+    in <code>Pictures/ScanFlowPro</code> (images) or <code>Download/ScanFlowPro</code> (PDFs).
+  </p>
 
   <!-- 2 -->
-  <h2>2. Permissions Used</h2>
+  <h2 data-n="2">Permissions &amp; Why We Use Them</h2>
 
   <div class="card">
     <h3><span class="badge">CAMERA</span> Camera Access</h3>
-    <p>Used solely to capture document images. Images are processed locally and never
-       transmitted to our servers.</p>
+    <p>Used solely to capture document images through the device camera.
+       Images are processed on-device only and are never transmitted to any server.</p>
   </div>
 
   <div class="card">
     <h3><span class="badge">STORAGE</span> Storage Access</h3>
-    <p>Required on Android 9 and below to save JPEG and PDF files to the device's
-       public directories. On Android 10 and above, the app uses the MediaStore API
-       which does not require a storage permission.</p>
+    <p>Required on Android 9 (API 28) and below to write JPEG/PDF files to public folders.
+       On Android 10 (API 29) and above, the app uses the MediaStore API — no storage
+       permission is needed.</p>
   </div>
 
   <div class="card">
     <h3><span class="badge">INTERNET</span> Internet Access</h3>
-    <p>Used exclusively to load advertisements served by Google AdMob.
-       The app itself does not communicate with any backend server.</p>
+    <p>Used exclusively by Google AdMob to serve advertisements.
+       The App itself has no backend server and makes no network requests of its own.</p>
   </div>
 
   <!-- 3 -->
-  <h2>3. Third-Party Services – Google AdMob</h2>
+  <h2 data-n="3">Third-Party Services — Google AdMob</h2>
   <p>
-    ScanFlow Pro displays advertisements provided by
-    <strong>Google AdMob</strong> (Google LLC). AdMob may collect and use data
-    such as device identifiers, IP address, and ad interaction events to
-    serve personalized or non-personalized ads.
+    ScanFlow Pro is supported by advertising provided by
+    <strong>Google AdMob</strong> (Google LLC). AdMob may automatically collect
+    certain data such as device advertising identifiers, IP address, and ad
+    interaction data in order to deliver and measure advertisements.
   </p>
   <p>
-    Google's use of data is governed by their own Privacy Policy:
-    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
-      https://policies.google.com/privacy</a>.
+    This data collection is governed entirely by Google's own Privacy Policy:<br />
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+      https://policies.google.com/privacy
+    </a>
   </p>
   <p>
-    You can opt out of personalized advertising by visiting
-    <a href="https://adssettings.google.com" target="_blank" rel="noopener">
-      https://adssettings.google.com</a>.
+    To opt out of personalized ads, visit Google's Ads Settings:<br />
+    <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer">
+      https://adssettings.google.com
+    </a>
   </p>
 
   <!-- 4 -->
-  <h2>4. Data Retention</h2>
+  <h2 data-n="4">Data Storage &amp; Retention</h2>
   <p>
-    Since ScanFlow Pro does not collect personal data, there is no data for us
-    to retain or delete. Scanned files remain on your device and can be removed
-    at any time through the app's Library screen or your device's file manager.
+    ScanFlow Pro does not maintain any server-side data. Scanned files live solely on
+    your device and remain under your full control. You can delete them at any time
+    via the in-app Library screen or your device's file manager.
   </p>
 
   <!-- 5 -->
-  <h2>5. Children's Privacy</h2>
+  <h2 data-n="5">Children's Privacy</h2>
   <p>
-    ScanFlow Pro is not directed at children under the age of 13. We do not
-    knowingly collect personal information from children. If you believe a child
-    has provided personal information through this app, please contact us so we can
-    take appropriate action.
+    ScanFlow Pro is not directed to children under the age of 13 (or the equivalent
+    minimum digital age in your jurisdiction). We do not knowingly collect personal
+    information from children. If you believe a child has used the App in a way that
+    raises a privacy concern, please contact us using the details in Section 8.
   </p>
 
   <!-- 6 -->
-  <h2>6. Security</h2>
+  <h2 data-n="6">Data Security</h2>
   <p>
-    Because all document data is processed and stored entirely on-device, there is
-    no risk of a server-side data breach affecting your scans. We recommend using
-    device-level security (PIN, fingerprint) to protect your stored files.
+    Because all document data is processed and stored entirely on-device, there is no
+    risk of a server-side breach exposing your scans. We recommend enabling device-level
+    security (screen lock, biometric authentication) to protect locally stored files.
   </p>
 
   <!-- 7 -->
-  <h2>7. Changes to This Policy</h2>
+  <h2 data-n="7">Changes to This Privacy Policy</h2>
   <p>
-    We may update this Privacy Policy from time to time. Any changes will be posted
-    on this page with an updated effective date. Continued use of the app after
-    changes constitutes acceptance of the revised policy.
+    We may update this Privacy Policy periodically to reflect changes in the App or
+    applicable laws. When we do, we will revise the "Last Updated" date at the top of
+    this page. Your continued use of ScanFlow Pro after any change constitutes your
+    acceptance of the updated policy.
   </p>
 
   <!-- 8 -->
-  <h2>8. Contact</h2>
+  <h2 data-n="8">Contact Us</h2>
   <p>
-    If you have questions or concerns about this Privacy Policy, please open an
-    issue on our GitHub repository:
+    If you have any questions or concerns about this Privacy Policy or the App's
+    data practices, please open an issue on our public repository:
   </p>
   <p>
-    <a href="https://github.com/ahmadhalmusa-byte/ScanFlowPro" target="_blank" rel="noopener">
+    <a href="https://github.com/ahmadhalmusa-byte/ScanFlowPro"
+       target="_blank" rel="noopener noreferrer">
       https://github.com/ahmadhalmusa-byte/ScanFlowPro
     </a>
   </p>
 
 </main>
 
+<!-- ═══ FOOTER ═══ -->
 <footer>
-  <p>© 2026 ScanFlow Pro &nbsp;|&nbsp;
-     <a href="https://github.com/ahmadhalmusa-byte/ScanFlowPro">GitHub</a>
-  </p>
-  <p style="margin-top:6px">Privacy Policy — Effective May 20, 2026</p>
+  <span class="app-footer-name">ScanFlow Pro: Document Scanner &amp; PDF Creator</span>
+  Privacy Policy &nbsp;·&nbsp; Effective May 20, 2026
+  &nbsp;·&nbsp;
+  <a href="https://github.com/ahmadhalmusa-byte/ScanFlowPro">GitHub</a>
 </footer>
 
 </body>
